@@ -1,0 +1,56 @@
+header {
+  display: inline-flexbox;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+  align-items: center;
+  height: 50vh;
+}
+
+main img {
+  margin: auto;
+}
+
+main input {
+}
+
+#search-box {
+  margin: auto;
+  width: 40px;
+}
+
+#pre-footer {
+  color: gray;
+}
+
+footer {
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 6px 10px;
+  text-decoration: none;
+}
