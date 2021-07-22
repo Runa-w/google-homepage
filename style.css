@@ -1,3 +1,8 @@
+* {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+}
+
 header {
   display: inline-flexbox;
   flex-direction: row;
@@ -20,6 +25,15 @@ li a {
   text-align: center;
   padding: 6px 10px;
   text-decoration: none;
+  border: none;
+}
+
+li a ::hover {
+  text-decoration: underline;
+}
+
+#sign-in button {
+  background-color: blue;
 }
 
 main {
@@ -33,9 +47,6 @@ main {
 
 main img {
   margin: auto;
-}
-
-main input {
 }
 
 #search-box {
@@ -53,4 +64,5 @@ footer {
   text-align: center;
   padding: 6px 10px;
   text-decoration: none;
+  margin: 12%;
 }
