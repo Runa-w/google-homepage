@@ -175,8 +175,8 @@ nav button:hover {
   padding: 10px;
   position: fixed;
   width: 100%;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   column-gap: 45%;
   color: black;
 
@@ -206,7 +206,7 @@ nav button:hover {
   display: inline-block; /* keeps everything in one line */
   padding: 5px 10px;
   margin: 0 5px;
-  color: darkgray;
+  color: #f1f1f1;
   font-size: 14px;
   text-decoration: none;
 }
@@ -223,6 +223,7 @@ nav button:hover {
   margin: auto;
   padding: 0;
   text-align: left;
+  text-overflow: inherit;
 }
 
 .tray-bar-right {
@@ -230,7 +231,7 @@ nav button:hover {
   display: flex;
   align-items: center;
   list-style-type: none;
-  /* padding-right: 15px; */
+  padding-right: 15px;
   margin: auto;
   padding: 0;
   text-align: right;
