@@ -1,68 +1,237 @@
 * {
   font-size: 14px;
   font-family: arial, sans-serif;
+  text-decoration: none;
+  background-color: white;
+  height: auto;
 }
 
-header {
-  display: inline-flexbox;
+/* Nav-Bar */
+
+nav {
+  display: flex;
   flex-direction: row;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  column-gap: 45%;
+  color: black;
+
+  /* border: 2px solid red; to be deleted */
 }
 
-ul {
+.nav-bar-left {
+  flex-grow: 1;
+  display: flex; /* to align the items to the center */
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  text-align: left;
 }
 
-li {
-  float: left;
+.nav-bar-right {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  /* padding-right: 15px; */
+  margin: 0;
+  /* padding: 0; */
+  text-align: right;
 }
 
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 6px 10px;
+nav li {
+  display: inline-block; /* keeps everything in one line */
+  padding: 5px;
+  margin: 0 5px;
+  color: darkgray;
+  font-size: 14px;
   text-decoration: none;
-  border: none;
 }
 
-li a ::hover {
+nav li:hover {
   text-decoration: underline;
 }
 
-#sign-in button {
+nav button {
+  border-radius: 1rem;
+  padding: 10px 20px;
+}
+
+nav button:hover {
+  text-decoration: underline;
+}
+
+.sign-in button {
   background-color: blue;
-}
-
-main {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 20%;
-  align-items: center;
-  height: 50vh;
-}
-
-main img {
-  margin: auto;
-}
-
-#search-box {
-  margin: auto;
-  width: 40px;
-}
-
-#pre-footer {
-  color: gray;
-}
-
-footer {
-  display: block;
-  color: gray;
-  text-align: center;
-  padding: 6px 10px;
+  color: white;
   text-decoration: none;
-  margin: 12%;
+}
+
+.sign-in a {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Google Search section */
+
+.grid-box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr 1fr 1fr 1fr;
+  gap: 20px; /* spacing between the rows */
+  margin: auto; /* centers the google container */
+  margin-top: 150px; /* adds spacing from the nav bar */
+  width: 700px; /* determins all elements inside the main container */
+  padding: 10px;
+}
+
+.google-logo {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  width: 300px;
+
+  display: block; /* to center the logo */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-box {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  width: 80%;
+  height: 2.5rem;
+  padding: 0.25rem 4rem;
+  display: block;
+  margin-left: 20px;
+  border-color: dfele5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-bar {
+  grid-column: 1 / 5;
+  width: 80%;
+  margin-left: 40px;
+}
+
+.search-bar:hover {
+  filter: drop-shadow(4px 4px 5px #ced4da);
+}
+
+.first-button {
+  grid-column: 2 / 3;
+  grid-row: 3;
+
+  width: 150px;
+  height: 40px;
+  background: #f8f9fa;
+
+  border-radius: 2px;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 180px;
+}
+
+.first-button:hover {
+  border: 2px solid darkgray;
+}
+
+.first-button:visited {
+  border: 2px solid #4285f4;
+}
+
+.second-button {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  width: 150px;
+  height: 40px;
+  background: #f8f9fa;
+
+  border-radius: 2px;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+  margin-left: 5px;
+}
+
+.second-button:hover {
+  border: 2px solid darkgray;
+}
+
+.second-button:visited {
+  border: 2px solid #4285f4;
+}
+
+.tray-flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  column-gap: 45%;
+  color: black;
+
+  /* border: 2px solid red; to be deleted */
+}
+
+.tray-flex-child-1 {
+  flex-grow: 1;
+  margin-left: 10; /*spacing from the left*/
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+}
+
+.tray-flex-child-2 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-right: 30px; /*commented out in the nav to make it work */
+  /* padding: 0; */
+  text-align: right;
+}
+
+.tray-flex-container li {
+  display: inline-block; /* keeps everything in one line */
+  padding: 5px 10px;
+  margin: 0 5px;
+  color: darkgray;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.tray-flex-container li:hover {
+  text-decoration: underline;
+}
+
+.tray-bar-left {
+  flex-grow: 1;
+  display: flex; /* to align the items to the center */
+  align-items: center;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+}
+
+.tray-bar-right {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  /* padding-right: 15px; */
+  margin: auto;
+  padding: 0;
+  text-align: right;
 }
