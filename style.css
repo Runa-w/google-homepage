@@ -1,5 +1,4 @@
 * {
-  font-size: 14px;
   font-family: arial, sans-serif;
   text-decoration: none;
   background-color: white;
@@ -54,6 +53,10 @@ nav li {
 
 nav li:hover {
   text-decoration: underline;
+}
+
+nav a {
+  color: #70757a;
 }
 
 nav button {
@@ -137,6 +140,7 @@ nav button:hover {
   cursor: pointer;
   display: block;
   margin-left: 180px;
+  color: #3c4043;
 }
 
 .first-button:hover {
@@ -159,6 +163,7 @@ nav button:hover {
   cursor: pointer;
   display: block;
   margin-left: 5px;
+  color: #3c4043;
 }
 
 .second-button:hover {
@@ -177,18 +182,16 @@ nav button:hover {
   width: 100%;
   left: 0;
   bottom: 0;
-  column-gap: 45%;
-  color: black;
-
-  /* border: 2px solid red; to be deleted */
+  column-gap: 25%git ;
+  font-size: 0.75em;
 }
 
 .tray-flex-child-1 {
   flex-grow: 1;
-  margin-left: 10; /*spacing from the left*/
+  margin-left: 10px; /*spacing from the left*/
   list-style-type: none;
   margin: auto;
-  padding: 0;
+  padding: 0 5%;
   text-align: left;
 }
 
@@ -197,8 +200,7 @@ nav button:hover {
   display: flex;
   align-items: center;
   list-style-type: none;
-  margin-right: 30px; /*commented out in the nav to make it work */
-  /* padding: 0; */
+  margin-right: 10px; /*commented out in the nav to make it work */
   text-align: right;
 }
 
@@ -206,13 +208,17 @@ nav button:hover {
   display: inline-block; /* keeps everything in one line */
   padding: 5px 10px;
   margin: 0 5px;
-  color: #f1f1f1;
-  font-size: 14px;
+  /* color: #f1f1f1; */
+  font-size: 1em;
   text-decoration: none;
 }
 
 .tray-flex-container li:hover {
   text-decoration: underline;
+}
+
+.tray-flex-container a {
+  color: #70757a;
 }
 
 .tray-bar-left {
@@ -223,7 +229,6 @@ nav button:hover {
   margin: auto;
   padding: 0;
   text-align: left;
-  text-overflow: inherit;
 }
 
 .tray-bar-right {
